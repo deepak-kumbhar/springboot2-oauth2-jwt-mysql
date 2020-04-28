@@ -48,7 +48,7 @@ java -jar target/springboot2-oauth2-jwt-mysql-0.0.1-SNAPSHOT.jar
   }
   ```
 
-  - User account is loacked.
+  - User account is locked.
   ```
   {
     "error": "unauthorized",
@@ -62,7 +62,7 @@ java -jar target/springboot2-oauth2-jwt-mysql-0.0.1-SNAPSHOT.jar
     "error_description": "User credentials have expired"
   }
   ```
-  - User account is locked.
+  - User account is expired.
   ```
   {
     "error": "unauthorized",
