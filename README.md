@@ -26,7 +26,8 @@ java -jar target/springboot2-oauth2-jwt-mysql-0.0.1-SNAPSHOT.jar
    - Username: admin
    - Password: password
 3. Get access token API.
-  a. Valid request and user is active.
+
+  - Valid request and user is active.
   
   ```
   URL: http://localhost:8080/oauth/token
@@ -47,28 +48,28 @@ java -jar target/springboot2-oauth2-jwt-mysql-0.0.1-SNAPSHOT.jar
   }
   ```
 
-  b. User account is loacked.
+  - User account is loacked.
   ```
   {
     "error": "unauthorized",
     "error_description": "User account is locked"
   }
   ```
-  c. User credentials is expired
+  - User credentials is expired
   ```
   {
     "error": "unauthorized",
     "error_description": "User credentials have expired"
   }
   ```
-  d. User account is locked.
+  - User account is locked.
   ```
   {
     "error": "unauthorized",
     "error_description": "User account has expired"
   }
   ```
-  e. User is disabled.
+  - User is disabled.
   ```
   {
     "error": "unauthorized",
